@@ -10,4 +10,12 @@ export const API_OPTION = {
     }
   };
 
-  export const TMDB_API = 'https://api.themoviedb.org/3/movie/now_playing?page=1'
+  export const TMDB_NOWPLAYING_API = 'https://api.themoviedb.org/3/movie/now_playing?page=1';
+
+  export const TMDB_POPULAR_API = "https://api.themoviedb.org/3/movie/popular?page=1";
+
+  export const TMDB_TOPRATED_API = "https://api.themoviedb.org/3/movie/top_rated?page=1";
+
+  export const TMDB_UPCOMING_API = "https://api.themoviedb.org/3/movie/upcoming?page=1"
+
+  export const IMG_API_URL = "https://image.tmdb.org/t/p/w500/"

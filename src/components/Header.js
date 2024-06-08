@@ -36,7 +36,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="absolute bg-gradient-to-b from-black w-full flex justify-between">
+    <div className="absolute bg-gradient-to-b from-black w-full flex justify-between z-10">
       <img
         className="w-56"
         src= {NTFX_LOGO}
@@ -47,7 +47,7 @@ const Header = () => {
           <h1 className=" w-8 font-bold text-white text-2xl my-8 border rounded-full text-center bg-slate-500">
             {user?.displayName?.split("")[0]}
           </h1>
-          <button className="m-8 text-white" onClick={signOutHandler}>
+          <button className="m-8 text-white cursor-pointer" onClick={signOutHandler}>
             Sign Out
           </button>
         </div>
