@@ -5,18 +5,30 @@ import SecondryContainer from "./SecondryContainer";
 import usePopularMovies from "../hooks/usePopularMovies";
 import useTopRatedMovies from "../hooks/useTopRatedMovies";
 import useUpcomingMovies from "../hooks/useUpcomingMovies";
+import { useSelector } from "react-redux";
+import SearchPage from "./SearchPage";
 
-const Browser = ()=>{
-   useNowPlayingMovies();
-   usePopularMovies();
-   useTopRatedMovies();
-   useUpcomingMovies();
+const Browser = () => {
+  const searchBarToggle = useSelector((store) => store.gptSearchToggle.toggle);
 
-    return <div>
-        <Header/>
-        <MainContainer/>
-        <SecondryContainer/>
+  useNowPlayingMovies();
+  usePopularMovies();
+  useTopRatedMovies();
+  useUpcomingMovies();
+
+  return (
+    <div>
+      <Header />
+      {searchBarToggle ? (
+        <SearchPage />
+      ) : (
+        <>
+          <MainContainer />
+          <SecondryContainer />{" "}
+        </>
+      )}
     </div>
-}
+  );
+};
 
 export default Browser;
