@@ -1,9 +1,11 @@
 import SearchBar from "./SearchBar";
+import SearchedResults from "./SearchedResults";
 
 
 const SearchPage = () => {
  return <div>
-    <SearchBar/>
+    <SearchBar/> 
+    <SearchedResults/>
  </div>
 };
 

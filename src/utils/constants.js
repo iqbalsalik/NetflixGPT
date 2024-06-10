@@ -6,7 +6,7 @@ export const API_OPTION = {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMDE1MzZlMmU1OWJmZGM1MmQ2M2E4NTY4ZWJhYmU1NyIsInN1YiI6IjY2NjJmYzg2NWMyNThhMzI5NmU2ZGIyNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.caeD7UjsunXWRyHT0J-IFK_CbZSNtsJsJC5giLqv23s'
+      Authorization: process.env.REACT_APP_TMDB_KEY
     }
   };
 
@@ -16,6 +16,8 @@ export const API_OPTION = {
 
   export const TMDB_TOPRATED_API = "https://api.themoviedb.org/3/movie/top_rated?page=1";
 
-  export const TMDB_UPCOMING_API = "https://api.themoviedb.org/3/movie/upcoming?page=1"
+  export const TMDB_UPCOMING_API = "https://api.themoviedb.org/3/movie/upcoming?page=1";
 
-  export const IMG_API_URL = "https://image.tmdb.org/t/p/w500/"
+  export const IMG_API_URL = "https://image.tmdb.org/t/p/w500/";
+
+  export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
