@@ -47,9 +47,10 @@ const SearchBar = ()=>{
           <img
             src={LGIN_BG}
             alt="BackGround"
+            className="h-screen md:h-auto object-cover"
           />
         </div>
-        <div className="w-[50%] m-auto pt-28">
+        <div className=" w-full md:w-[50%] md:m-auto pt-36 md:pt-28" >
           <form className=" bg-black h-20 flex align-middle rounded-lg opacity-70">
             <input
             ref={searchTxt}

@@ -90,9 +90,10 @@ const Login = () => {
         <img
           src={LGIN_BG}
           alt="BackGround"
+          className="h-screen md:h-auto object-cover"
         />
       </div>
-      <div className="w-3/12 m-auto absolute top-24 left-1/3 bg-black h-auto rounded-lg text-white opacity-80">
+      <div className="w-full md:w-3/12 m-auto absolute top-24 left-0 md:left-1/3 bg-black h-auto rounded-lg text-white opacity-80">
         <h1 className="font-bold text-2xl m-3 p-2">
           {signIn ? "Sign Up" : "Sign In"}
         </h1>
